@@ -23,7 +23,7 @@ public class BubbleSort {
         }
     }
 
-    public static void betterBubbleSort(int[] nums){
+    public static void bubbleSortBetter(int[] nums){
         boolean flag; // check already sorted
         for (int i = 0; i < nums.length - 1; i++){
             flag = false;
@@ -45,6 +45,6 @@ public class BubbleSort {
         int[] nums = new int[]{5,3,9,4,7,6,1,3,8};
         int[] nums2 = new int[]{1,2,3,4}; // best cases
         bubbleSort(nums);
-        betterBubbleSort(nums2);
+        bubbleSortBetter(nums2);
     }
 }
