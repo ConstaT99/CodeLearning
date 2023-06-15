@@ -55,6 +55,8 @@ public class InsertSort {
     }
 // example
     public static void main(String[] args) {
-
+        Example examples = new Example();
+        insertSort(examples.nums);
+        insertSortBetter(examples.nums);
     }
 }
