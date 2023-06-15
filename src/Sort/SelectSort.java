@@ -28,8 +28,9 @@ public class SelectSort {
     }
 
     public static void main(String[] args) {
+        Example examples = new Example();
         int[] nums = new int[] {5,4,6,2,1,7};
-        selectSort(nums);
+        selectSort(examples.nums);
         for( int num: nums){
             System.out.println(num);
         }

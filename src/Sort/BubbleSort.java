@@ -42,9 +42,9 @@ public class BubbleSort {
     }
 
     public static void main(String[] args) {
-        int[] nums = new int[]{5,3,9,4,7,6,1,3,8};
-        int[] nums2 = new int[]{1,2,3,4}; // best cases
-        bubbleSort(nums);
-        bubbleSortBetter(nums2);
+        Example examples = new Example();
+        int[] nums = new int[]{1,2,3,4}; // best cases
+        bubbleSort(examples.nums);
+        bubbleSortBetter(nums);
     }
 }

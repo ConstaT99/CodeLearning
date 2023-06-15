@@ -36,12 +36,9 @@ public class SortStabilization {
     }
 
     public static void main(String[] args) {
-        Product product1 = new Product(0,9);
-        Product product2 = new Product(1,9);
-        Product product3 = new Product(2,9);
-        Product product4 = new Product(3,10);
+        Example examples = new Example();
+        Product[] products = examples.getProductExample();
 
-        Product[] products = new Product[]{product1,product2,product3,product4};
         stableBubbleSort(products);
         for(Product product : products){
             System.out.println(product.toString());
