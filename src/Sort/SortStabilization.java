@@ -26,16 +26,7 @@ public class SortStabilization {
     public static void stableBubbleSort(Product[] products){
         for (int i = 0; i < products.length - 1; i++){
             for( int j = products.length - 1; j > i; j --){
-                if( products[j].getPrice() < products[j - 1].getPrice()){
-                    Product temp = products[j];
-                    products[j] = products[j - 1];
-                    products[j - 1] = temp;
-                }
-            }
-        }
-        for (int i = 0; i < products.length - 1; i++){
-            for( int j = products.length - 1; j > i; j --){
-                if( products[j].getSale() < products[j - 1].getSale()){
+                if( products[j].compareTo(products[j-1]) < 0){
                     Product temp = products[j];
                     products[j] = products[j - 1];
                     products[j - 1] = temp;

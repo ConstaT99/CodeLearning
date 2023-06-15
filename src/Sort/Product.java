@@ -1,6 +1,8 @@
 package Sort;
 
-public class Product {
+import java.util.Comparator;
+
+public class Product implements Comparable<Product>{
     public Product(int price, int sale) {
         this.price = price;
         this.sale = sale;
@@ -32,5 +34,25 @@ public class Product {
                 "price=" + price +
                 ", sale=" + sale +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Product o) {
+        if(this.sale == o.sale){
+            return this.price - o.price;
+        }else{
+            return this.sale - o.sale;
+        }
+    }
+}
+
+class ProductCompare implements Comparator<Product>{
+    @Override
+    public int compare(Product o1, Product o2) {
+        if(o1.getSale() == o2.getSale()){
+            return o1.getPrice() - o2.getPrice();
+        }else{
+            return o1.getSale() - o2.getSale();
+        }
     }
 }
