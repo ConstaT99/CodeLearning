@@ -32,7 +32,7 @@ public class InsertSort {
      * - Worse:O(n^2)
      * - Average: O(n^2)
  */
-    public static void insertSortBetter(int[] nums){
+    public static void insertSortBinary(int[] nums){
         int high,low,temp,mid; // declare variable ahead.
         for (int i = 0; i < nums.length; i++) {
             high = i;
@@ -57,6 +57,6 @@ public class InsertSort {
     public static void main(String[] args) {
         Example examples = new Example();
         insertSort(examples.nums);
-        insertSortBetter(examples.nums);
+        insertSortBinary(examples.nums);
     }
 }
