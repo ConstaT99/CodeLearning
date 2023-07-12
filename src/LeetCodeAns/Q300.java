@@ -36,6 +36,7 @@ public class Q300 {
         int res = 0;
         for(int num : nums){
             i = 0; j = res;
+            // binary search on temp list
             while(i != j){
                 m = ( i + j )/2;
                 if(temp[m] < num){
@@ -44,6 +45,7 @@ public class Q300 {
                     j = m;
                 }
             }
+
             temp[i] = num;
             if( i == res){ res++ ;}
         }

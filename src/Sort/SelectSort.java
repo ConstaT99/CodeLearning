@@ -7,8 +7,8 @@ public class SelectSort {
      * - Best: O(n^2)
      * - Worse:O(n^2)
      * - Average: O(n^2)
-     * - Unstable
      * Space complexity: O(1)
+     * Stabilization : unstable
      * @param nums
      * */
     public static void selectSort(int[] nums){

@@ -2,10 +2,9 @@ package Sort;
 
 public class Example {
     // some test cases
-    public int[] nums =new int[]{5,3,9,4,7,6,1,3,8};
+    public int[] nums = new int[]{5,3,9,4,7,6,1,3,8};
+
     public Product[] products;
-
-
 
     public int[] Q300 = new int[]{10,9,2,5,3,7,101,18};
 

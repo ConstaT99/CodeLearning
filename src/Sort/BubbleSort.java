@@ -7,7 +7,7 @@ public class BubbleSort {
     * - Best: O(n)
     * - Worse:O(n^2)
     * - Average: O(n^2)
-    * - Stable
+    * Stabilization : stable
     * @param nums
     * */
 

@@ -7,8 +7,8 @@ public class InsertSort {
      * - Best: O(n)
      * - Worse:O(n^2)
      * - Average: O(n^2)
-     * - stable
      * Space complexity: O(1)
+     * Stabilization : stable
      * @param nums
      * */
     public static void insertSort(int[] nums){
