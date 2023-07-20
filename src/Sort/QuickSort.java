@@ -10,8 +10,7 @@ public class QuickSort {
     }
     // partition function to find the pivot and swap the value.
     public static int partition(int[] nums, int left, int right){
-        int pivotIndex = left;
-        int pivot = nums[pivotIndex];
+        int pivot = nums[left];
         int l = left + 1;
         int r = right;
         while(l <= r){
@@ -21,7 +20,7 @@ public class QuickSort {
             if(nums[l] <= pivot) l++;
             if(nums[r] >= pivot) r--;
         }
-        swap(nums,pivotIndex,r);
+        swap(nums,left,r);
         return r;
     }
 
