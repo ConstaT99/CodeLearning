@@ -1,6 +1,16 @@
 package Sort;
 
 public class QuickSort {
+
+    /* Idea is to exchange space with Time
+     * Time complexity:
+     * - Best: O(nlogn)
+     * - Worse: O(nlogn)
+     * - Average: O(nlogn)
+     * Stabilization : stable
+     * Space Complexity: O(1)
+     * @param nums
+     * */
     public static void quickSort(int[] nums, int left, int right){
         if(left < right){
             int pivot = partition(nums, left, right);

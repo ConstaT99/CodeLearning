@@ -10,6 +10,7 @@ public class CountSort {
      * - Worse: No need to discuss
      * - Average: O(n+k) k : range of integer
      * Stabilization : stable
+     * Space Complexity: O(k)
      * @param nums
      * */
     public static void countSort(int[] nums){
