@@ -21,4 +21,17 @@ public class Q287 {
         Input: nums = [3,1,3,4,2]
         Output: 3
     * */
+    public static int findDuplicate(int[] nums) {
+        int[] numcount = new int[nums.length - 1];
+        for( int i = 0; i <= nums.length - 1; i++){
+            if(numcount[nums[i] - 1] == 1){
+                return nums[i];
+            }else{
+                numcount[nums[i] - 1] += 1;
+            }
+        }
+        return 0;
+    }
+
+
 }
