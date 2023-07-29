@@ -12,6 +12,8 @@ public class Example {
     public int[] Q300 = new int[]{10,9,2,5,3,7,101,18};
     public Map<String, Object > Q88 = new HashMap<>();
 
+    public int[][] matrix = new int[][] {{1,2,3,4},{5,6,7,8},{9,10,11,12}};
+
     public int[] getNums() {
         return nums;
     }
