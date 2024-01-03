@@ -41,9 +41,7 @@ public class MergeSort {
             temp[k++] = nums[j++];
         }
         // copy the temp to nums
-        for( int x = 0; x < temp.length; x++){
-            nums[x + low] = temp[x];
-        }
+        System.arraycopy(temp, 0, nums, low, temp.length);
     }
 
     public static void main(String[] args) {
