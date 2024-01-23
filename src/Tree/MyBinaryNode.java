@@ -1,8 +1,6 @@
 package Tree;
 
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
 public class MyBinaryNode {
     int val;
@@ -67,6 +65,7 @@ public class MyBinaryNode {
         }
     }
     public int getVal() {
+        List<Integer> temp = new ArrayList<>();
         return val;
     }
 }
